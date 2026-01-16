@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CarePlus | About</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+<style>
+    /* Container Spacing */
+.about-container, .features-section {
+    padding: 80px 10%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Grid Layouts */
+.about-grid, .features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    align-items: center;
+}
+
+/* Stat Cards */
+.about-stats {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.stat-card {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    flex: 1;
+    border-bottom: 4px solid #007bff; /* CarePlus Primary Color */
+}
+
+/* Features */
+.section-title {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 2.5rem;
+}
+
+.feature-item {
+    text-align: center;
+    padding: 30px;
+    transition: transform 0.3s ease;
+}
+
+.feature-item:hover {
+    transform: translateY(-10px);
+}
+
+.feature-item i {
+    font-size: 3rem;
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+</style>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html" class="logo"><i class="fas fa-heartbeat"></i> CarePlus</a>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html" class="active">About</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <div class="menu-toggle"><i class="fas fa-bars"></i></div>
+    </nav>
+
+    <div class="hero-section bg-about">
+        <div class="overlay"></div>
+        <div class="content-box">
+            <h1>About CarePlus</h1>
+            <p>Your Health, Our Priority. Connecting you with top-tier medical professionals at the click of a button.</p>
+        </div>
+    </div>
+
+    <section class="about-container">
+        <div class="about-grid">
+            <div class="about-text">
+                <h2>Our Mission</h2>
+                <p>At CarePlus, we believe that accessing quality healthcare should be simple, fast, and stress-free. Founded in 2024, our platform bridges the gap between patients and healthcare providers through innovative digital solutions.</p>
+                <p>We aim to empower patients by providing transparent information, verified doctor reviews, and a seamless booking experience that fits into your busy lifestyle.</p>
+            </div>
+            <div class="about-stats">
+                <div class="stat-card">
+                    <h3>500+</h3>
+                    <p>Verified Doctors</p>
+                </div>
+                <div class="stat-card">
+                    <h3>10k+</h3>
+                    <p>Happy Patients</p>
+                </div>
+                <div class="stat-card">
+                    <h3>24/7</h3>
+                    <p>Support</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="features-section">
+        <h2 class="section-title">Why Choose CarePlus?</h2>
+        <div class="features-grid">
+            <div class="feature-item">
+                <i class="fas fa-user-md"></i>
+                <h3>Expert Specialists</h3>
+                <p>Access a wide network of board-certified specialists across various medical fields.</p>
+            </div>
+            <div class="feature-item">
+                <i class="fas fa-calendar-check"></i>
+                <h3>Instant Booking</h3>
+                <p>No more long phone queues. Book your appointment instantly through our real-time calendar.</p>
+            </div>
+            <div class="feature-item">
+                <i class="fas fa-shield-alt"></i>
+                <h3>Secure Records</h3>
+                <p>Your health data is protected with enterprise-grade encryption and privacy standards.</p>
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
