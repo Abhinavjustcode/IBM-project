@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CarePlus | Doctors</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html" class="logo"><i class="fas fa-heartbeat"></i> CarePlus</a>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="doctors.html" class="active">Doctors</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <div class="menu-toggle"><i class="fas fa-bars"></i></div>
+    </nav>
+
+    <div class="hero-section bg-doctors">
+        <div class="overlay"></div>
+        <div class="content-box">
+            <h1>Meet Our Specialists</h1>
+            <div class="grid-container">
+                <div class="card">
+                    <img src="photos/doc2.jpg" alt="Doctor">
+                    <div class="card-info">
+                        <h3>Dr. James Smith</h3>
+                        <p>Cardiologist (10 Yrs Exp)</p>
+                        <button onclick="bookNow('Dr. James Smith')" class="btn">Book Now</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="photos/female doctor.jpg" alt="Doctor">
+                    <div class="card-info">
+                        <h3>Dr. Sarah Lee</h3>
+                        <p>Pediatrician (8 Yrs Exp)</p>
+                        <button onclick="bookNow('Dr. Sarah Lee')" class="btn">Book Now</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="photos/doc1.jpg" alt="Doctor">
+                    <div class="card-info">
+                        <h3>Dr. Alan Grant</h3>
+                        <p>Neurologist (15 Yrs Exp)</p>
+                        <button onclick="bookNow('Dr. Alan Grant')" class="btn">Book Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
